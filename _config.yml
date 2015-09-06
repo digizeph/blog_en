@@ -1,15 +1,15 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           :year/:month/:day/:title.html
+permalink:           :year/:month/:title.html
 relative_permalinks: true
 
 # Setup
 title:               Hemingway
 tagline:             'A cyber hideout for fun and research.'
 description:         'This cite contains posts and my personal projects, research interests, crazy ideas, and casual thought dumps.'
-url:                 https://digizeph.github.io
-baseurl:             ''
+url:                 http://mwzhang.com
+baseurl:             '/en'
 paginate:            5
 
 # About/contact
