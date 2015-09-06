@@ -2,7 +2,7 @@
 layout: page
 title: Philosophy 123 privacy presentation
 linktitle: Phil123
-permalink: /en/phil123/
+permalink: /phil123/
 ---
 
 ##Slides:

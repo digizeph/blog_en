@@ -2,7 +2,7 @@
 layout: page
 title: Mingwei Zhang
 linktitle: About
-permalink: /en/about/
+permalink: /about/
 ---
 
 I am a student at [University of Oregon][uo] pursuing a PhD degree in

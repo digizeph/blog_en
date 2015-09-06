@@ -2,7 +2,7 @@
 layout: page
 title: Blog posts
 linktitle: Archive
-permalink: /en/archive/
+permalink: /archive/
 ---
 
 {% for post in site.posts %}

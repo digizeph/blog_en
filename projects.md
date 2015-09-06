@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 linktitle: Projects
-permalink: /en/projects/
+permalink: /projects/
 ---
 
 ## BGP related projects:
