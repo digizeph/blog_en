@@ -9,16 +9,16 @@ comments: True
 Here is a strange case.
 I am running a SVN repository for HTTP access.
 It uses svnnotify script for sending out notifications on commits.
-The repo is hosted on a Apache server, the location of the repo is at `/var/www/svn`.
+The repo is hosted on an Apache server, the location of the repo is at `/var/www/svn`.
 The host system is running a CentOS 5.11.
 
 
 One day, my advisor told me that he couldn't receive any notification emails.
 So as usual, I checked the following items:
 
-* is there any tailing space in the `post-commit` file?
-* is the permission of the post-commit correct?
-* is the post-commit script runs well?
+* Is there any tailing space in the `post-commit` file?
+* Is the permission of the post-commit correct?
+* Is the post-commit script runs well?
 
 I checked all the items and there seems to be nothing wrong with the system.
 What can possibly go wrong here?
@@ -44,8 +44,8 @@ So I ran the command as the error told me to, and here it is:
 
 Aha!
 It must be the fact that my advisor moved the file to its home,
-editted it, and copied it back.
-The result is that SELinux nolongger think that was the same file as before.
+edited it, and copied it back.
+The result was that SELinux no longer thinks that was the same file as before.
 Therefore, SELinux stopped the script from running for security reasons.
 
 So, to get things back to normal, I followed the instruction within the message:
@@ -57,7 +57,7 @@ So, to get things back to normal, I followed the instruction within the message:
 > the entire directory using restorecon -R -v '/var/www/svn/repos/hooks'.
 
 I never know that my system is running a [SELinux][centos-selinux] (I took that machine over when I joined the lab), 
-and I would of course never suppect that the svnnotify would not work in such a strange case.
+and I would of course never suspect that the svnnotify would not work in such a strange case.
 
 A precious lesson learned: **always edit the file at its original location**!
 
